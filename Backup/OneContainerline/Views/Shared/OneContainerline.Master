@@ -1,0 +1,75 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /> | One Container Line</title>
+    <link href="<%=Url.Content("~/Content/global.css") %>" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="<%=Url.Content("~/Scripts/jquery-1.4.1.js") %>"></script>
+    <asp:ContentPlaceHolder ID="HeaderContent" runat="server" />
+    <script type="text/javascript">
+	    $(document).ready(function(){
+		    $(".SplashImage").css({opacity: 0.75});
+		    $('a.SplashPanel').hover(
+			    function(){
+				    $(this).find('img.SplashImage').css({opacity: 1});
+			    },
+			    function(){
+				    $(this).find('img.SplashImage').css({opacity: 0.75});
+			    }
+		    );	
+	    });
+    </script>
+</head>
+<body>
+    <div class="darkBlueTop"></div>
+	<div class="bodyBackground">
+    	<div class="bodyContainer">
+            <div class="headerBG clearClass">
+                <div class="headerLogo floatLeft"><a href="/"><img src="<%=Url.Content("~/images/splashLogo.png")%>" height="56" width="200" /></a></div>
+                <div class="floatRight topNav">
+                	<div class="floatLeft"><img src="<%=Url.Content("~/images/menu-round-left.png") %>" height="30" /></div>
+                    <div class="floatLeft mainNav">
+                    	<ul class="tabs">
+                            <li><a href="/" title="Home">Home</a></li>
+                            <li><a href="/about" title="About Us">About Us</a></li>
+                            <li><a href="/services" title="Services">Services</a></li>
+                            <li><a href="/contact" title="Contact and Tracking">Contact and Tracking</a></li>
+                        </ul>
+                    </div>
+                    <div class="floatRight"><img src="<%=Url.Content("~/images/menu-round-right.png")%>" height="30" /></div>
+                    <div class="clearClass"></div>
+                </div>
+                <div class="clearClass"></div>
+            </div>
+            <div class="menu-bg">
+            	<asp:ContentPlaceHolder ID="MenuContent" runat="server" />
+            </div>
+            <div class="masterBody">
+            	<asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            </div>
+            <div class="spaceBeforeFooter"></div>
+        </div>
+        <div class="lightFooter">
+        	<div class="bodyContainer">
+            	<div class="lightFooterBG">
+                	<div class="bodyContainer" style="text-align:center;">A Subsidiary Of:<br />
+                    	<a href="http://oneglobal.org" class="SplashPanel" id="lnkOneGlobal" target="_blank">
+                    		<img src="<%=Url.Content("~/images/OneGlobalLogo.png")%>" class="SplashImage" width="90" height="54" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="darkFooter">
+        	<div class="bodyContainer">
+            	<div class="footerText">
+	            	Copyright 2009, One Container Line.  All rights reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
