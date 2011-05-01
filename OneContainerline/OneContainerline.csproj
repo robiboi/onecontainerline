@@ -84,9 +84,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\OneContainer.mdf" />
+    <Content Include="App_Data\OneContainer_log.ldf">
+      <DependentUpon>OneContainer.mdf</DependentUpon>
+    </Content>
     <Content Include="Global.asax" />
     <Content Include="Views\Services\container.aspx" />
     <Content Include="Views\Services\requestform.aspx" />
+    <Content Include="Views\Services\requestform2.aspx" />
+    <Content Include="Views\Services\requestform1.aspx" />
     <Content Include="Views\Services\tradelane.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -168,7 +174,10 @@
     <Content Include="Views\Shared\OneContainerline.Master" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
+    <ProjectReference Include="..\OneContainerlineBL\OneContainerlineBL.csproj">
+      <Project>{1966B17F-F611-432D-A9ED-EB093402F04D}</Project>
+      <Name>OneContainerlineBL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

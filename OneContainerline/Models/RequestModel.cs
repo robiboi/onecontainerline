@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.ComponentModel;
+using OneContainerlineBL;
+using System.Web.Mvc;
 
 namespace OneContainerline.Models
 {
@@ -27,13 +29,16 @@ namespace OneContainerline.Models
         public string Email { get; set; }
 
         [DisplayName("Select Origin")]
-        public ListCountries Origin { get; set; }
+        public List<SelectListItem> Origin { get; set; }
 
         [DisplayName("Select Destination Country")]
-        public ListCountries DestinationCountry { get; set; }
+        public List<SelectListItem> DestinationCountry { get; set; }
 
-        [DisplayName("Select Destination or Nearest City")]
-        public string Commodity { get; set; }
+        [DisplayName("Select Destination Nearest City")]
+        public List<SelectListItem> DestinationCity { get; set; }
+
+        [DisplayName("Select Commodity")]
+        public List<SelectListItem> Commodity { get; set; }
 
         [DisplayName("Weight(Estimate OK)")]
         public string Weight { get; set; }
@@ -45,16 +50,16 @@ namespace OneContainerline.Models
         public string NumberOf40Containers { get; set; }
 
         [DisplayName("Other Container Type")]
-        public string OtherContainerType { get; set; }
+        public List<SelectListItem> OtherContainerType { get; set; }
 
         [DisplayName("Type of Goods")]
-        public string TypeOfGoods { get; set; }
+        public List<SelectListItem> TypeOfGoods { get; set; }
 
         [DisplayName("Is the Cargo Hazardous Material")]
         public bool IsHazardous { get; set; }
 
         [DisplayName("Do You Need The Container Be Sent To Your Loading Area?")]
-        public string DistanceToLoadingArea { get; set; }
+        public List<SelectListItem> DistanceToLoadingArea { get; set; }
 
         [DisplayName("Do You Need Customs Clearance At Origin?")]
         public bool IsClearanceNeeded { get; set; }
@@ -71,17 +76,13 @@ namespace OneContainerline.Models
         [DisplayName("Do you require insurance?")]
         public string RequiredInsurance { get; set; }
 
-        [DisplayName
-    }
+        [DisplayName("When are you shipping")]
+        public DateTime ShippingDate { get; set; }
 
-    public class ListCountries
-    {
-        public List<Country> Countries { get; set; }
-    }
+        [DisplayName("Declared value of Cargo")]
+        public string CargoValue { get; set; }
 
-    public class Country
-    {
-        public int CountryId { get; set; }
-        public string Country { get; set; }
+        [DisplayName("Please provide full cargo description, or write down additional services or inquiries you may have.")]
+        public string FullDescription { get; set; }
     }
 }

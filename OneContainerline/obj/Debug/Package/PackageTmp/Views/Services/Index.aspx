@@ -21,6 +21,8 @@
 </div>
 <div id="map_canvas" style="width:900px; height:500px; margin: 0 auto;">We are sorry for the inconvinience,  page currently undergoing modification</div>
 <div style="height: 20px;"></div>
+
+<div id="image_map">Image map</div>
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="HeaderContent" runat="server">

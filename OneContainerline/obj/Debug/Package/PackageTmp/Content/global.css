@@ -133,10 +133,19 @@ p.welcomeText {
 	height: 66px;
 	width: 1024px;
 }
+.masterBodyBG {
+	width: 988px;
+	padding: 0 17px;
+}
 .masterBody {
-	background: transparent url(../images/body-bg1.png) bottom no-repeat;
-	width: 1024px;
+	background: #bce3f4;
 	min-height: 505px;
+}
+.masterBodyBGButtom {
+	position: relative;
+	top: -10px;
+	background: transparent url(../images/body-bg1.png) bottom no-repeat;
+	height: 100px;
 }
 .pageTitle-BG {
 	height: 70px;
@@ -270,4 +279,87 @@ display: block;
 ul.dropdown li a
 {
 display: block;
+}
+
+/* Container page */
+.cd_dimensions_container
+{
+	padding: 20px 0px;
+	border-bottom: 1px dotted #002C58;
+}
+.container_image
+{
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 30px;
+	width: 160px;
+}
+.container_image img
+{
+	width: 200px;
+	height: 200px;
+}
+.container_dimensions
+{
+	width: 725px;
+	padding: 10px 30px;
+}
+.container_dimensions table
+{
+	width: 100%;
+	border-collapse: collapse;
+}
+.container_dimensions table, .container_dimensions tr, .container_dimensions td
+{
+	border: 1px solid black;
+}
+.container_dimensions td
+{
+	padding: 5px;
+}
+td.title
+{
+	font-weight: bold;
+	color: white;
+	background-color: #002C58;
+	text-align: center;
+}
+td.name
+{
+	font-weight: bold;
+}
+
+.requestForm
+{
+	padding: 50px;
+	width: 800px;
+}
+
+.trEven 
+{
+	background-color: #9AD1E8;
+}
+
+/* forms */
+.editor-label 
+{
+	width: 200px;
+	float: left;
+}
+.editor-field
+{
+	width: 500px;
+	float: left;
+}
+
+fieldset
+{
+	padding: 30px;
+	margin: 30px;
+}
+
+/* spacers */
+.space10px 
+{
+	height: 10px;
 }

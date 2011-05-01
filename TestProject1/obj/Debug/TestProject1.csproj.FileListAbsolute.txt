@@ -1,0 +1,8 @@
+D:\WebFiles\onecontainerline\OneContainerline\TestProject1\bin\Debug\TestProject1.dll
+D:\WebFiles\onecontainerline\OneContainerline\TestProject1\bin\Debug\TestProject1.pdb
+D:\WebFiles\onecontainerline\OneContainerline\TestProject1\bin\Debug\OneContainerlineBL.dll
+D:\WebFiles\onecontainerline\OneContainerline\TestProject1\bin\Debug\OneContainerlineBL.pdb
+D:\WebFiles\onecontainerline\OneContainerline\TestProject1\obj\Debug\ResolveAssemblyReference.cache
+D:\WebFiles\onecontainerline\OneContainerline\TestProject1\obj\Debug\TestProject1.dll
+D:\WebFiles\onecontainerline\OneContainerline\TestProject1\obj\Debug\TestProject1.pdb
+D:\WebFiles\onecontainerline\OneContainerline\TestProject1\bin\Debug\TestProject1.dll.config

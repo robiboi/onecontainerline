@@ -47,8 +47,12 @@
             <div class="menu-bg">
             	<asp:ContentPlaceHolder ID="MenuContent" runat="server" />
             </div>
-            <div class="masterBody">
-            	<asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            <div class="masterBodyBG">
+                <div class="masterBody">
+            	    <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+                </div>
+                <div class="masterBodyBGButtom">
+				</div>
             </div>
             <div class="spaceBeforeFooter"></div>
         </div>

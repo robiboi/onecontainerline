@@ -8,3 +8,5 @@ D:\WebFiles\onecontainerline\OneContainerline\OneContainerline\bin\System.Web.Ro
 D:\WebFiles\onecontainerline\OneContainerline\OneContainerline\bin\System.Web.Mvc.xml
 D:\WebFiles\onecontainerline\OneContainerline\OneContainerline\bin\System.Web.Abstractions.dll
 D:\WebFiles\onecontainerline\OneContainerline\OneContainerline\bin\System.Web.Mobile.dll
+D:\WebFiles\onecontainerline\OneContainerline\OneContainerline\bin\OneContainerlineBL.dll
+D:\WebFiles\onecontainerline\OneContainerline\OneContainerline\bin\OneContainerlineBL.pdb
